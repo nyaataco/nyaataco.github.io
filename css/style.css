@@ -137,6 +137,17 @@ h1.heading {
     padding-top: 50px;
     padding-bottom: 80px;
     margin-bottom: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1023px) {
+    #profile,
+    #works,
+    #skills {
+        width: 100%;
+    }
 }
 
 #profile,
@@ -148,7 +159,6 @@ h1.heading {
     display: flex;
     flex-direction: row-reverse;
     gap: 30px;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -161,15 +171,20 @@ h1.heading {
     flex: 1;
 }
 
-@media (max-width: 1023px) {
-    #profile .inner {
-        width: 100%;
-    }
+#profile-img {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
 }
+
 
 @media (max-width: 599px) {
     #profile .inner {
         display: block;
+    }
+
+    #profile .inner .left {
+        margin: 0 auto;
     }
 
     #profile .inner .right {
@@ -179,26 +194,44 @@ h1.heading {
 
 
 #works .inner {
-    margin: 0 auto;
-}
-
-#works .row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 #works .col {
-    flex: 1;
-    height: 200px;
+    aspect-ratio: 3 / 2; 
     background: #cade83;
     box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+
+#works .col .link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#works .col .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+}
+
+.pizza {
+    background-image: url("../images/sample-pizza.jpg");
+    background-position: left center;
 }
 
 
 #skills .inner {
     display: flex;
     gap: 30px;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -210,7 +243,6 @@ h1.heading {
 @media (max-width: 599px) {
     #skills .inner {
         display: block;
-        width: 100%;
     }
 
     #skills .left {
