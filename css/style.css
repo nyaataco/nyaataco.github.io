@@ -5,6 +5,7 @@
 
     --black: #333;
     --white: #fff;
+    --gray: #ccc;
 
     --header-h: 50px;
     --footer-h: 25px;
@@ -119,10 +120,28 @@ header .header-left ul li {
     margin-top: 0;
 }
 
+h1.heading {
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 #profile,
-#skills,
+#works,
+#skills {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+}
+
+#profile,
 #works {
-    margin-bottom: 80px;
+    border-bottom: 1px solid var(--gray);
 }
 
 #profile .inner {
@@ -159,9 +178,28 @@ header .header-left ul li {
 }
 
 
+#works .inner {
+    margin: 0 auto;
+}
+
+#works .row {
+    display: flex;
+    gap: 30px;
+}
+
+#works .col {
+    flex: 1;
+    height: 200px;
+    background: #cade83;
+    box-shadow: var(--shadow);
+}
+
+
 #skills .inner {
     display: flex;
     gap: 30px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #skills .inner .left,
@@ -172,6 +210,7 @@ header .header-left ul li {
 @media (max-width: 599px) {
     #skills .inner {
         display: block;
+        width: 100%;
     }
 
     #skills .left {
