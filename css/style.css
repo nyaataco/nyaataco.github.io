@@ -56,9 +56,22 @@ header a {
   }
 }
 
+@media (max-width: 599px) {
+  .header-inner {
+    padding: 0 10px 10px 10px;
+    line-height: 1em;
+  }
+}
+
 header .header-left ul li {
     display: inline-block;
     margin-left: 30px;
+}
+
+@media (max-width: 599px) {
+    header .header-left ul li {
+        margin-left: 15px;
+    }
 }
 
 
@@ -69,7 +82,6 @@ header .header-left ul li {
     padding: 50px;
 }
 
-/* デスクトップ（1024px〜） */
 @media (min-width: 1024px) {
     #main {
         max-width: 1200px;
@@ -78,14 +90,12 @@ header .header-left ul li {
     }
 }
 
-/* タブレット（600px〜1023px） */
 @media (min-width: 600px) and (max-width: 1023px) {
     #main {
         padding: 30px;
     }
 }
 
-/* スマホ */
 @media (max-width: 599px) {
     #main {
         padding: 20px;
