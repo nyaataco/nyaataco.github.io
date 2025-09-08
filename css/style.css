@@ -1,0 +1,102 @@
+:root {
+    --bgback: #c7e7fa;
+    --bg: #1b4593;
+    --bgmain: #fff;
+
+    --black: #000;
+    --white: #fff;
+
+    --header-h: 50px;
+    --footer-h: 25px;
+
+    --shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background: var(--bgback);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* header */
+header {
+    background-color: var(--bg);
+    color: var(--white);
+    height: var(--header-h);
+}
+
+header a {
+    color: var(--white);
+}
+
+.header-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1250px) {
+  .header-inner {
+    padding: 0 30px;
+  }
+}
+
+header .header-left ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+/* main */
+#main {
+    min-height: calc(100vh - var(--header-h) - var(--footer-h));
+    background-color: var(--bgmain);
+}
+
+/* スマホ */
+@media (max-width: 599px) {
+  #main {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
+
+/* タブレット（600px〜1023px） */
+@media (min-width: 600px) and (max-width: 1023px) {
+  #main {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+}
+
+/* デスクトップ（1024px〜） */
+@media (min-width: 1024px) {
+  #main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    font-size: 18px;
+  }
+}
+
+/* footer */
+footer {
+    height: var(--footer-h);
+    background-color: var(--bg);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+footer a {
+    color: var(--white);
+}
