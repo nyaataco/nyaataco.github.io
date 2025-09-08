@@ -3,7 +3,7 @@
     --bg: #1b4593;
     --bgmain: #fff;
 
-    --black: #000;
+    --black: #333;
     --white: #fff;
 
     --header-h: 50px;
@@ -13,11 +13,18 @@
 }
 
 body {
+    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
     background: var(--bgback);
+    line-height: 1.8em;
+    color: var(--black);
 }
 
 a {
     text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
 }
 
 li {
@@ -54,37 +61,101 @@ header .header-left ul li {
     margin-left: 30px;
 }
 
+
 /* main */
 #main {
     min-height: calc(100vh - var(--header-h) - var(--footer-h));
     background-color: var(--bgmain);
-}
-
-/* スマホ */
-@media (max-width: 599px) {
-  #main {
-    padding: 0 10px;
-    font-size: 14px;
-  }
-}
-
-/* タブレット（600px〜1023px） */
-@media (min-width: 600px) and (max-width: 1023px) {
-  #main {
-    padding: 0 20px;
-    font-size: 16px;
-  }
+    padding: 50px;
 }
 
 /* デスクトップ（1024px〜） */
 @media (min-width: 1024px) {
-  #main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    font-size: 18px;
-  }
+    #main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+    }
 }
+
+/* タブレット（600px〜1023px） */
+@media (min-width: 600px) and (max-width: 1023px) {
+    #main {
+        padding: 30px;
+    }
+}
+
+/* スマホ */
+@media (max-width: 599px) {
+    #main {
+        padding: 20px;
+    }
+}
+
+#main h2 {
+    margin-top: 0;
+}
+
+#profile,
+#skills,
+#works {
+    margin-bottom: 80px;
+}
+
+#profile .inner {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#profile .inner .left {
+    flex: 0 0 250px;
+    background: #a6dee7;
+}
+
+#profile .inner .right {
+    flex: 1;
+}
+
+@media (max-width: 1023px) {
+    #profile .inner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 599px) {
+    #profile .inner {
+        display: block;
+    }
+
+    #profile .inner .right {
+        margin-bottom: 30px;
+    }
+}
+
+
+#skills .inner {
+    display: flex;
+    gap: 30px;
+}
+
+#skills .inner .left,
+#skills .inner .right {
+    flex: 1;
+}
+
+@media (max-width: 599px) {
+    #skills .inner {
+        display: block;
+    }
+
+    #skills .left {
+        margin-bottom: 50px;
+    }
+}
+
 
 /* footer */
 footer {
