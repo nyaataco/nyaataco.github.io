@@ -164,7 +164,6 @@ h1.heading {
 
 #profile .inner .left {
     flex: 0 0 250px;
-    background: #a6dee7;
 }
 
 #profile .inner .right {
@@ -175,8 +174,16 @@ h1.heading {
     width: 250px;
     height: 250px;
     background-size: cover;
+    background-image: url(../images/nyaataco.jpg);
+    border-radius: 20px;
 }
 
+#profile .discription {
+    font-size: small;
+    margin-top: 0;
+    text-align: right;
+    padding-right: 2px;
+}
 
 @media (max-width: 599px) {
     #profile .inner {
@@ -184,6 +191,8 @@ h1.heading {
     }
 
     #profile .inner .left {
+        width: 250px;
+        height: 250px;
         margin: 0 auto;
     }
 
@@ -203,12 +212,10 @@ h1.heading {
 }
 
 #works .col {
-    aspect-ratio: 3 / 2; 
+    aspect-ratio: 5 / 4; 
     background: #cade83;
-    box-shadow: var(--shadow);
     overflow: hidden;
 }
-
 
 #works .col .link {
     display: block;
@@ -216,11 +223,17 @@ h1.heading {
     height: 100%;
 }
 
+#works .col .title {
+    margin: 0;
+    background: var(--bgmain);
+}
+
 #works .col .image {
     width: 100%;
     height: 100%;
     background-size: cover;
     display: block;
+    box-shadow: var(--shadow);
 }
 
 .pizza {
