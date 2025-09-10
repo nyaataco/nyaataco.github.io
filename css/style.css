@@ -289,6 +289,30 @@ header .header-left ul li {
     }
 }
 
+#development li {
+    position: relative;
+}
+
+#development li::before {
+    content: "\f578";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.5em;
+    color: #999;
+}
+
+#qualification li {
+    position: relative;
+}
+
+#qualification li::before {
+    content: "\f4ba";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.5em;
+    color: #999;
+}
+
 
 /* footer */
 footer {
