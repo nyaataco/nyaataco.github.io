@@ -1,6 +1,6 @@
 :root {
-    --bgback: #ffebd5;
-    --bgmain: #ffebd5;
+    --bgback: #fdf3e8;
+    --bgmain: #fdf3e8;
     --base: #6a513b;
     --subcolor: #ec8804;
 
@@ -231,6 +231,8 @@ h2.heading {
 #works .col .title {
     margin: 0;
     background: var(--bgmain);
+    color: var(--black);
+    font-weight: 600;
 }
 
 #works .col .image {
