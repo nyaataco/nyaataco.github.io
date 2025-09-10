@@ -7,6 +7,7 @@
     --black: #333;
     --white: #fff;
     --gray: #ccc;
+    --lightbrown: #b1a79f;
 
     --header-h: 50px;
     --footer-h: 25px;
@@ -298,7 +299,7 @@ header .header-left ul li {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     margin-right: 0.5em;
-    color: #999;
+    color: var(--lightbrown);
 }
 
 #qualification li {
@@ -310,7 +311,7 @@ header .header-left ul li {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     margin-right: 0.5em;
-    color: #999;
+    color: var(--lightbrown);
 }
 
 
