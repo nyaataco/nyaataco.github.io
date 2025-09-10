@@ -1,7 +1,8 @@
 :root {
-    --bgback: #c7e7fa;
-    --bg: #1b4593;
-    --bgmain: #fff;
+    --bgback: #ffebd5;
+    --bgmain: #ffebd5;
+    --base: #6a513b;
+    --subcolor: #ec8804;
 
     --black: #333;
     --white: #fff;
@@ -47,7 +48,7 @@ li {
 
 /* header */
 header {
-    background-color: var(--bg);
+    background-color: var(--base);
     color: var(--white);
     height: var(--header-h);
 }
@@ -271,7 +272,7 @@ h2.heading {
 /* footer */
 footer {
     height: var(--footer-h);
-    background-color: var(--bg);
+    background-color: var(--base);
     color: var(--white);
     display: flex;
     justify-content: center;
