@@ -131,6 +131,10 @@ header .header-left ul li {
     margin-bottom: 50px;
 }
 
+h2.heading {
+    opacity: 0;
+}
+
 #profile,
 #works,
 #skills {
