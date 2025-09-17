@@ -268,6 +268,16 @@ header .header-left ul li {
     background-position: left center;
 }
 
+.cafe-child {
+    background-image: url("../images/MoutainTailsCafe/archive-event.jpg");
+    background-position: center;
+}
+
+.cafe-blockeditor {
+    background-image: url("../images/MoutainTailsCafe/topimage.jpg");
+    background-position: left;
+}
+
 
 #skills .inner {
     display: flex;
@@ -364,3 +374,9 @@ h2.heading {
     opacity: 0;
 } */
 
+
+/* mountain-tails-cafe */
+
+.mountain-tails-cafe image {
+
+}
