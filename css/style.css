@@ -490,13 +490,19 @@ footer {
     margin-top: 80px;
 }
 
+.mountain-tails-cafe .sample-images,
 .mountain-tails-cafe .retouch {
     display: flex;
 }
 
+.mountain-tails-cafe .sample-images img,
 .mountain-tails-cafe .retouch img {
     width: 300px;
     padding-bottom: 15px;
+}
+
+.mountain-tails-cafe .sample-images img:first-child {
+    padding-right: 45px;
 }
 
 .mountain-tails-cafe .retouch img:first-child {
@@ -520,6 +526,7 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
+    .mountain-tails-cafe .sample-images,
     .mountain-tails-cafe .retouch {
         display: block;
     }
