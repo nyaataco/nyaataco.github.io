@@ -387,6 +387,11 @@ footer {
     text-align: right;
 }
 
+.mountain-tails-cafe .message .arrow {
+    margin-left: 5px;
+    color: var(--base);
+}
+
 .mountain-tails-cafe .large-image {
     width: 600px;
     height: 400px;
@@ -479,6 +484,69 @@ footer {
 
 .mountain-tails-cafe .small-images .contact {
     background-image: url(../images/MoutainTailsCafe/thumbnail-contact.jpg);
+}
+
+.mountain-tails-cafe .omake {
+    margin-top: 80px;
+}
+
+.mountain-tails-cafe .retouch {
+    display: flex;
+}
+
+.mountain-tails-cafe .retouch img {
+    width: 300px;
+    padding-bottom: 15px;
+}
+
+.mountain-tails-cafe .retouch img:first-child {
+    padding-right: 15px;
+}
+
+.mountain-tails-cafe .retouch img:last-child {
+    padding-left: 15px;
+}
+
+.mountain-tails-cafe .retouch .arrow {
+    display: flex;
+    align-items: center;
+}
+
+.mountain-tails-cafe .retouch .arrow::before {   
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f061";
+    color: var(--base);
+}
+
+@media screen and (max-width: 750px) {
+    .mountain-tails-cafe .retouch {
+        display: block;
+    }
+
+    .mountain-tails-cafe .retouch img {
+        display: block;
+    }
+
+    .mountain-tails-cafe .retouch img:first-child {
+        padding-right: 0;
+        padding-bottom: 5px;
+    }
+
+    .mountain-tails-cafe .retouch img:last-child {
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    .mountain-tails-cafe .retouch .arrow {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mountain-tails-cafe .retouch .arrow::before {
+        content: "\f063";
+    }
 }
 
 .go-to-home {
