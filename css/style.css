@@ -37,6 +37,19 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
+    color: #4d562a;
+}
+
+a:visited {
+    color: #4d562a;
+}
+
+a:hover{
+    color: #799417;
+}
+
+a:active {
+    color: #bcd75a;
 }
 
 ul {
@@ -391,6 +404,8 @@ h2.heading {
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    background-size: cover;
+    background-position: top;
 }
 
 @media screen and (max-width: 750px) {
@@ -437,18 +452,44 @@ h2.heading {
     }
 }
 
-.mountain-tails-cafe .home {
+.mountain-tails-cafe .small-images .home {
+    background-image: url(../images/MoutainTailsCafe/thmbnail-home.jpg);
+}
+.mountain-tails-cafe .large-image.home {
     background-image: url(../images/MoutainTailsCafe/home.jpg);
 }
 
-.mountain-tails-cafe .blogs {
+
+.mountain-tails-cafe .small-images .blogs {
+    background-image: url(../images/MoutainTailsCafe/thmbnail-blogs.jpg);
+}
+
+.mountain-tails-cafe .large-image.blogs {
     background-image: url(../images/MoutainTailsCafe/blogs.jpg);
 }
 
-.mountain-tails-cafe .blog {
+
+.mountain-tails-cafe .small-images .blog {
+    background-image: url(../images/MoutainTailsCafe/thmbnail-blog.jpg);
+}
+
+.mountain-tails-cafe .large-image.blog {
     background-image: url(../images/MoutainTailsCafe/blog.jpg);
 }
 
-.mountain-tails-cafe .contact {
+
+.mountain-tails-cafe .small-images .contact {
+    background-image: url(../images/MoutainTailsCafe/thumbnail-contact.jpg);
+}
+
+.mountain-tails-cafe .large-image.contact {
     background-image: url(../images/MoutainTailsCafe/contact.jpg);
 }
+
+
+.go-to-home {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
