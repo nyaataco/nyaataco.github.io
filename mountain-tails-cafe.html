@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="nyaatacoのポートフォリオサイトです。Web開発、動画制作、イラスト制作などの作品を紹介しています。">
+    <meta name="description" content="nyaatacoのポートフォリオサイト、WordPressカスタマイズ例の紹介ページです。">
 
     <title>nyaataco portfolio | Mountain Tails Café</title>
     <!-- Font Awesome -->
@@ -22,15 +22,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     
     <noscript>
-        <style>
-            h2.heading {
-                opacity: 1 !important;
-            }
-
-            /* #works .inner {
-                opacity: 1 !important;
-            } */
-        </style>
+        このページはjavascriptを有効にしてご覧ください。
     </noscript>
 
 </head>
@@ -57,21 +49,38 @@
         <div class="mountain-tails-cafe">
             <h1>WordPress Site</h1>
 
-            <p>
-                astra + spectraで作ったWordPressサイトです。
+            <p class="text">
+                astra + spectraで作ったWordPressサイトです。<br>
+                ブロックエディタの使い方、サイトのデザインは
+                <a href="https://www.udemy.com/course/wordpress-for-beginners-the-complete-2019-wordpress-guide/?srsltid=AfmBOoo1im-56LOAHuvBipuovgrgFJYOSsEHyEW85Fhfvu8gNSwsKVHB" class="link-style">WordPress for Beginners: The Complete 2024 Master Class</a>
+                で学習、作成したものをカスタマイズしました。
             </p>
 
             <div class="container">
+                <div class="message">
+                    PCではスクロールしてご覧いただけます ↓
+                </div>
                 <div class="large-image">
-                    <img src="images/MoutainTailsCafe/home.jpg" alt="">
+                    <img src="images/MoutainTailsCafe/home.jpg" alt="Image preview" class="fade-in">
                 </div>
                 <div class="small-images">
                     <div class="image home" data-name="home"></div>
                     <!-- <div class="image menu" data-name="menu"></div> -->
-                    <div class="image blogs" data-name="blogs"></div>
+                    <div class="image event" data-name="event"></div>
+                    <div class="image event-achive" data-name="event-achive"></div>
+                    <div class="image event-single" data-name="event-single"></div>
                     <div class="image blog" data-name="blog"></div>
                     <div class="image contact" data-name="contact"></div>
                 </div>
+            </div>
+
+            <div class="text">
+                カスタムしたCSSは
+                <a href="https://github.com/nyaataco/MountainTailsCafe/blob/main/style.css" class="link-style">
+                    こちら
+                </a>
+                で公開しています。<br>
+                セキュリティ面を考慮し、カスタマイズが少ないページについては、子ページを作らずシンプルな構成にしています。
             </div>
         </div>
         
@@ -79,14 +88,12 @@
             <a href="index.html">戻る</a>
         </div>
         
-
     </div>
 
     <footer>
-        © 2025 Copyright : &#8194;<a href="#">nyaataco</a>
+        © 2025 Copyright : &#8194;<a href="index.html">nyaataco</a>
     </footer>
 
-    <script src="js/script.js"></script>  
     <script src="js/image-viewer.js"></script>    
 
 </body>

@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newImg = document.createElement("img");
             newImg.src = newImageSrc;
             newImg.alt = dataName;
+            newImg.classList.add("fade-in");
 
             const oldImage = DisplayErea.querySelector("img")
             DisplayErea.replaceChild(newImg, oldImage);
