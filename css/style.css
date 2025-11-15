@@ -387,6 +387,14 @@ footer {
 }
 
 
+/* Subpage */
+
+.go-to-home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
 /* mountain-tails-cafe */
 
 .mountain-tails-cafe h1 {
@@ -602,9 +610,54 @@ footer {
     }
 }
 
-.go-to-home {
-    text-align: center;
-    margin-top: 50px;
+
+
+/* illustrations */
+
+.illustrations .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.illustrations .illust {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: background-size .6s ease;
+}
+
+.illustrations .illust:hover {
+    background-size: 70%;
+}
+
+.illustrations .brash {
+    background-image: url(../images/illustraions/brush.png);
+    background-size: 40%;
+}
+
+.illustrations .calc {
+    background-image: url(../images/illustraions/calclator.png);
+}
+
+.illustrations .camera {
+    background-image: url(../images/illustraions/camera.png);
+}
+
+.illustrations .glass {
+    background-image: url(../images/illustraions/magnifying-glass.png);
+}
+
+.illustrations .mic {
+    background-image: url(../images/illustraions/microphone.png);
+}
+
+.illustrations .pencil {
+    background-image: url(../images/illustraions/pencile.png);
 }
 
 /* animation */
