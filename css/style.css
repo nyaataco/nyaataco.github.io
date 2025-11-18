@@ -328,7 +328,7 @@ a:hover.github {
 }
 
 .illust {
-    background-image: url("../images/illustraions/brush.png");
+    background-image: url("../images/illustraions/brush.jpg");
     background-position: center;
     background-color: #fff;
 }
@@ -672,27 +672,27 @@ footer {
 }
 
 .illustrations .brash {
-    background-image: url(../images/illustraions/brush.png);
+    background-image: url(../images/illustraions/brush.jpg);
 }
 
 .illustrations .calc {
-    background-image: url(../images/illustraions/calclator.png);
+    background-image: url(../images/illustraions/calclator.jpg);
 }
 
 .illustrations .camera {
-    background-image: url(../images/illustraions/camera.png);
+    background-image: url(../images/illustraions/camera.jpg);
 }
 
 .illustrations .glass {
-    background-image: url(../images/illustraions/magnifying-glass.png);
+    background-image: url(../images/illustraions/magnifying-glass.jpg);
 }
 
 .illustrations .mic {
-    background-image: url(../images/illustraions/microphone.png);
+    background-image: url(../images/illustraions/microphone.jpg);
 }
 
 .illustrations .pencil {
-    background-image: url(../images/illustraions/pencile.png);
+    background-image: url(../images/illustraions/pencile.jpg);
 }
 
 /* animation */
