@@ -328,6 +328,12 @@ a:hover.github {
     background-position: left;
 }
 
+.illust {
+    background-image: url("../images/illustraions/brush.png");
+    background-position: center;
+    background-color: #fff;
+}
+
 
 #skills .inner {
     display: flex;
@@ -620,10 +626,17 @@ footer {
     gap: 30px;
 }
 
+.illustrations i {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 0.5em;
+    color: var(--lightBrown);
+}
+
 .illustrations .illust {
     width: 200px;
     aspect-ratio: 1 / 1;
-    background-size: 50%;
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #fff;
@@ -632,12 +645,11 @@ footer {
 }
 
 .illustrations .illust:hover {
-    background-size: 70%;
+    background-size: 110%;
 }
 
 .illustrations .brash {
     background-image: url(../images/illustraions/brush.png);
-    background-size: 40%;
 }
 
 .illustrations .calc {
